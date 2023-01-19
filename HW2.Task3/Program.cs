@@ -7,7 +7,12 @@ Console.Clear();
 Console.WriteLine("Введите число");
 int numberDay = Convert.ToInt32(Console.ReadLine());
 
-if (numberDay < 6) 
+if ((numberDay == 0) || (numberDay > 7 ))
+{
+  System.Console.WriteLine ( "Недопустимое значение");  
+}
+
+else if (numberDay < 6) 
 {
   System.Console.WriteLine(numberDay + " " + "будний день");
 }
@@ -15,10 +20,7 @@ else if (numberDay < 8)
 {
   System.Console.WriteLine(numberDay + " " + "выходной");  
 }
-else if ((numberDay == 0) || (numberDay > 8 ))
-{
-  System.Console.WriteLine ( "Недопустимое значение");  
-}
+
 
 
 
