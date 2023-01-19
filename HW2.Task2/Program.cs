@@ -27,6 +27,6 @@ else
     num3 = number % 10;
 
 
-System.Console.WriteLine(num3);
+System.Console.WriteLine($"-> {num3}");
 }
 
