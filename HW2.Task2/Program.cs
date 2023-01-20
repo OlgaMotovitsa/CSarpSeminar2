@@ -9,7 +9,7 @@ Console.Clear();
 
 System.Console.WriteLine("Введите любое число: ");
 int number = Convert.ToInt32 (System.Console.ReadLine());
-int num3 = 0;
+int result = 0;
 
 if (number < 100)
 
@@ -24,9 +24,9 @@ else
         number = number / 10;
     }
 
-    num3 = number % 10;
+    result = number % 10;
 
 
-System.Console.WriteLine($"-> {num3}");
+System.Console.WriteLine($"-> {result}");
 }
 
